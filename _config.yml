@@ -1,85 +1,60 @@
 ##########
 # collectionbuilder-csv
 # Jekyll Digital Collection Generator
-# [https://github.com/CollectionBuilder/collectionbuilder-csv](https://github.com/CollectionBuilder/collectionbuilder-csv)
 ##########
-
 
 #########
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
 url: "https://archive.georgecoates.com"
-# path to location on the domain if necessary e.g. /digital/hjccc
+# path to location on the domain if necessary
 baseurl: ""
-# location of code, the full url to your github repository
+# location of code, the full URL to your GitHub repository
 source-code: "https://github.com/haneensid/georgecoatesarchive"
-
 
 ##########
 # SITE SETTINGS
 #
-# title of site appears in banner
-title: The George Coates Archive
-# tagline, a short phrase that will appear throughout the site in the top banner
-tagline: 
-# description appears in meta tags and other locations
-# this description might appear in search result lists, keep around 160 characters max
-description: Audiovisual media from George Coates Peformance Works' pioneering avant-garde multimedia theater. 
-# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: george coates; rare area; actual sho; george coates performance works; avant-garde theater; new media
-# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
-
+title: "The George Coates Archive"
+tagline: ""
+description: "Audiovisual media from George Coates Performance Works' pioneering avant-garde multimedia theater."
+keywords: "george coates; rare area; actual sho; george coates performance works; avant-garde theater; new media"
+author: "CollectionBuilder"
 
 ##########
 # COLLECTION SETTINGS
 #
-# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
-# Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
+# CSV filename in _data, without the .csv extension
 metadata: GCARCHIVEMETADATA0818
-# page generation settings [optional!]
-# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
-# page_gen:
-#   - data: 'demo-metadata'
-#     template: 'item'
-#     name: 'objectid'
-#     dir: 'items'
-#     extension: 'html' 
-#     filter: 'objectid'  
-
 
 ##########
 # ORGANIZATION SETTINGS
 #
-# Enter name and link for your organization (replacing the name and links below)
-# These values will be used in attribution and data 
-organization-name: George Coates Peformance Works"
-organization-link: 
-# Add logo image links if you would like them to appear in banner and footer. Delete or leave blank to remove logos.
-organization-logo-banner: [https://imglink.cc/cdn/4iVmVEQ3xV.png](https://imglink.cc/cdn/4iVmVEQ3xV.png)
-organization-logo-nav: [https://imglink.cc/cdn/4iVmVEQ3xV.png](https://imglink.cc/cdn/4iVmVEQ3xV.png)
-
+organization-name: "George Coates Performance Works"
+organization-link: ""
+organization-logo-banner: "https://imglink.cc/cdn/4iVmVEQ3xV.png"
+organization-logo-nav: "https://imglink.cc/cdn/4iVmVEQ3xV.png"
 
 ##########
 # ROBOTS EXCLUDE
 #
-# set noindex to true if you do NOT want Google to index your site
-# noindex: true 
-
+# noindex: true
 
 ##########
-# BUILD SETTINGS 
+# BUILD SETTINGS
 #
-# Note: use environment variable on build command to include analytics
-# JEKYLL_ENV=production jekyll build
-# (this is done automatically by gh-pages build)
-#
-# Library directory location. This allows you to customize where the standard assets are found.
-# provide a relative path in this repository or full url 
 lib-assets: /assets/lib
-# ignore stuff
-exclude: [docs/, Rakefile, rakelib/, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md]
-# compress CSS output
+exclude:
+  - docs/
+  - Rakefile
+  - rakelib/
+  - README.md
+  - LICENSE
+  - CITATION.cff
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - SECURITY.md
+
 sass:
   style: compressed
